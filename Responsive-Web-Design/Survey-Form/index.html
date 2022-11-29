@@ -11,65 +11,75 @@
     <h1 id="title">Lorem Ipsum</h1>
     <p id="description">You should have a short explanation in a p element with an id of description</p>
     <form id="survey-form">
+        <fieldset>
         <label for="name" id="name-label">
             Name:
             <input type="text" id="name" name="name" placeholder="John" required>
         </label>
         <label for="email" id="email-label">
             Email:
-            <input type="email" id="email" name="name" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" min="7" max="30" placeholder="john@example.com" required>
+            <input type="email" id="email" name="name" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="john@example.com" required>
         </label>
         <label for="number" id="number-label">
             Age:
             <input type="number" id="number" min="18" max="120" name="age" placeholder="18" required>
         </label>
-        <label for="dropdown">
-            Select Random Latin Word:
-            <select name="lorem-ipsum" id="dropdown" required>
-                <option value="">-- Please choose an option --</option>
-                <option value="lorem">Lorem</option>
-                <option value="ipsum">Ipsum</option>
-                <option value="dolor">Dolor</option>
-                <option value="amet">Amet</option>
-            </select>
-        </label>
-        <label for="hot">
-            Hot:
-            <input type="radio" value="hot" name="hot-cold" id="hot" checked>
-        </label>
-        <label for="cold">
-            Cold:
-            <input type="radio" value="cold" name="hot-cold" id="cold">
-        </label>
-        <label for="soccer">
-            Soccer:
-            <input type="checkbox" value="soccer" name="sports" id="soccer">
-        </label>
-        <label for="basketball">
-            Basketball:
-            <input type="checkbox" value="basketball" name="sports" id="basketball">
-        </label>
-        <label for="hockey">
-            Hockey:
-            <input type="checkbox" value="hockey" name="sports" id="hockey">
-        </label>
-        <label for="football">
-            Football:
-            <input type="checkbox" value="football" name="sports" id="football">
-        </label>
-        <label for="spaghetti">
-            Spaghetti:
-            <input type="checkbox" value="spaghetti" name="sports" id="spaghetti">
-        </label>
-        <label for="biography">
-            Tell me about yourself!
-            <textarea placeholder="Hello World, my name is lorem ipsum" name="biography" id="biography" maxlength="200" required></textarea>
-        </label>
-        <button type="submit" id="submit">Button</button>
+        </fieldset>
+        <fieldset>
+            <legend>Choose A Drink</legend>
+            <label for="hot">
+                Hot:
+                <input type="radio" value="hot" name="hot-cold" id="hot" checked>
+            </label>
+            <label for="cold">
+                Cold:
+                <input type="radio" value="cold" name="hot-cold" id="cold">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>What's your favorite sport?</legend>
+            <label for="soccer">
+                Soccer:
+                <input type="checkbox" value="soccer" name="sports" id="soccer">
+            </label>
+            <label for="basketball">
+                Basketball:
+                <input type="checkbox" value="basketball" name="sports" id="basketball">
+            </label>
+            <label for="hockey">
+                Hockey:
+                <input type="checkbox" value="hockey" name="sports" id="hockey">
+            </label>
+            <label for="football">
+                Football:
+                <input type="checkbox" value="football" name="sports" id="football">
+            </label>
+            <label for="spaghetti">
+                Spaghetti:
+                <input type="checkbox" value="spaghetti" name="sports" id="spaghetti">
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="dropdown">
+                Select Random Latin Word:
+                <select name="lorem-ipsum" id="dropdown" required>
+                    <option value="">-- Please choose an option --</option>
+                    <option value="lorem">Lorem</option>
+                    <option value="ipsum">Ipsum</option>
+                    <option value="dolor">Dolor</option>
+                    <option value="amet">Amet</option>
+                </select>
+            </label>
+            <label for="biography">
+                Tell me about yourself!
+                <textarea placeholder="Hello World, my name is lorem ipsum" name="biography" id="biography" maxlength="200" required></textarea>
+            </label>
+        </fieldset>
+        <button type="submit" id="submit">Submit</button>
     </form>
 </body>
-
+<!--
 https://pixabay.com/
-Image by <a href="https://pixabay.com/users/ylanite-2218222/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=7592445">Ylanite Koppens</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=7592445">Pixabay</a>
 Image by <a href="https://pixabay.com/users/hardae-19599637/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=7598174">Karimah Adeola</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=7598174">Pixabay</a>
+-->
 </html>
