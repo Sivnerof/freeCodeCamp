@@ -9,13 +9,22 @@
 </head>
 <body>
     <nav id="navbar">
-        Nav Bar
-        <header>Header nav bar</header>
+        <header>
+            <h2>Python Documentation</h2>
+        </header>
+        <ul>
+            <li><a href="#introduction" class="nav-link">Introduction</a></li>
+            <li><a href="#variables" class="nav-link">Variables</a></li>
+            <li><a href="#conditionals" class="nav-link">Conditionals</a></li>
+            <li><a href="#loops" class="nav-link">Loops</a></li>
+            <li><a href="#functions" class="nav-link">Functions</a></li>
+        </ul>
     </nav>
     <main id="main-doc">
-        <section class="main-section" id="">
+        <h1>Python Documentation</h1>
+        <section class="main-section" id="introduction">
             <header>
-                The first element within each .main-section should be a header element, which contains text that describes the topic of that section.
+                <h2>Introduction</h2>
             </header>
             <p>1</p>
             <p>2</p>
@@ -28,16 +37,20 @@
             <p>9</p>
             <p>10</p>
         </section>
-        <section class="main-section" id="">
-            <header>The first element within each .main-section should be a header element, which contains text that describes the topic of that section.</header>
+        <section class="main-section" id="variables">
+            <header>
+                <h2>Variables</h2>
+            </header>
             <code>print("Hello World")</code>
             <code>print("Hello World")</code>
             <code>print("Hello World")</code>
             <code>print("Hello World")</code>
             <code>print("Hello World")</code>
         </section>
-        <section class="main-section" id="">
-            <header>The first element within each .main-section should be a header element, which contains text that describes the topic of that section.</header>
+        <section class="main-section" id="conditionals">
+            <header>
+                <h2>Conditionals</h2>
+            </header>
             <ul>
                 <li>List Item 1</li>
                 <li>List Item 2</li>
@@ -46,23 +59,21 @@
                 <li>List Item 5</li>
             </ul>
         </section>
-        <section class="main-section" id="">
-            <header>The first element within each .main-section should be a header element, which contains text that describes the topic of that section.</header>
+        <section class="main-section" id="loops">
+            <header>
+                <h2>Loops</h2>
+            </header>
         </section>
-        <section class="main-section" id="">
-            <header>The first element within each .main-section should be a header element, which contains text that describes the topic of that section.</header>
+        <section class="main-section" id="functions">
+            <header>
+                <h2>Functions</h2>
+            </header>
         </section>
     </main>
 </body>
 </html>
-<!--
-    Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "JavaScript and Java" should have a corresponding id="JavaScript_and_Java")
 
-    The navbar element should contain one header element which contains text that describes the topic of the technical documentation
-    Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section
-    The header element in the #navbar must come before any link (a) elements in the navbar
-    Each element with the class of nav-link should contain text that corresponds to the header text within each section (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world")
-    When you click on a navbar element, the page should navigate to the corresponding section of the #main-doc element (e.g. If you click on a .nav-link element that contains the text "Hello world", the page navigates to a section element with that id, and contains the corresponding header)
+<!--
     On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user
     Your technical documentation should use at least one media query
 -->
