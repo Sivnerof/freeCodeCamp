@@ -113,7 +113,6 @@
             <p>Variable names are case-sensitive.</p>
             <h4>Example</h4>
             <code>
-                This will create two variables:
                 a = 4
                 A = "Sally"
                 #A will not overwrite a
@@ -123,13 +122,96 @@
             <header>
                 <h2>Conditionals</h2>
             </header>
+
+            <p>Python supports the usual logical conditions from mathematics:</p>
             <ul>
-                <li>List Item 1</li>
-                <li>List Item 2</li>
-                <li>List Item 3</li>
-                <li>List Item 4</li>
-                <li>List Item 5</li>
+                <li>Equals: a == b</li>
+                <li>Not Equals: a != b</li>
+                <li>Less than: a &lt; b</li>
+                <li>Less than or equal to: a &lt;= b</li>
+                <li>Greater than: a > b</li>
+                <li>Greater than or equal to: a &gt;= b</li>
             </ul>
+
+            <p>These conditions can be used in several ways, most commonly in "if statements" and loops.</p>
+
+            <h3>IF</h3>
+            <p>An "if statement" is written by using the if keyword.</p>
+            <h4>Example</h4>
+            <p>
+                In this example we use two variables, a and b, which are used as part of the if statement to test whether b is greater than a.
+                As a is 33, and b is 200, we know that 200 is greater than 33, and so we print to screen that "b is greater than a".
+            </p>
+            <code>
+                a = 33
+                b = 200
+                if b > a:
+                    print("b is greater than a")
+            </code>
+
+            <h3>Indentation</h3>
+            <p>
+                Python relies on indentation (whitespace at the beginning of a line) to define scope in the code.
+                Other programming languages often use curly-brackets for this purpose.
+            </p>
+            <h4>Example</h4>
+            <p>If statement, without indentation (will raise an error):</p>
+            <code>
+                a = 33
+                b = 200
+                if b > a:
+                print("b is greater than a") # you will get an error
+            </code>
+
+            <h3>Elif</h3>
+            <p>The elif keyword is pythons way of saying "if the previous conditions were not true, then try this condition".</p>
+            <h4>Example</h4>
+            <code>
+                a = 33
+                b = 33
+                if b > a:
+                    print("b is greater than a")
+                elif a == b:
+                    print("a and b are equal")
+            </code>
+
+            <h3>Else</h3>
+            <p>The else keyword catches anything which isn't caught by the preceding conditions.</p>
+            <h4>Example</h4>
+            <code>
+                a = 200
+                b = 33
+                if b > a:
+                    print("b is greater than a")
+                elif a == b:
+                    print("a and b are equal")
+                else:
+                    print("a is greater than b")
+            </code>
+
+            <h3>And</h3>
+            <p>The and keyword is a logical operator, and is used to combine conditional statements:</p>
+            <h4>Example</h4>
+            <p>Test if a is greater than b, AND if c is greater than a:</p>
+            <code>
+                a = 200
+                b = 33
+                c = 500
+                if a > b and c > a:
+                    print("Both conditions are True")
+            </code>
+
+            <h3>Or</h3>
+            <p>The or keyword is a logical operator, and is used to combine conditional statements:</p>
+            <h4>Example</h4>
+            <p>Test if a is greater than b, OR if a is greater than c:</p>
+            <code>
+                a = 200
+                b = 33
+                c = 500
+                if a > b or a > c:
+                    print("At least one of the conditions is True")
+            </code>
         </section>
         <section class="main-section" id="loops">
             <header>
