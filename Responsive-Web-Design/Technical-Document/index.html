@@ -119,6 +119,8 @@
             </code>
         </section>
         <section class="main-section" id="conditionals">
+            <!--Style error section differently-->
+            <!--Make little block sections for keywords-->
             <header>
                 <h2>Conditionals</h2>
             </header>
@@ -217,11 +219,57 @@
             <header>
                 <h2>Loops</h2>
             </header>
+
+            <p>A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).</p>
+            <p>
+                This is less like the for keyword in other programming languages,
+                and works more like an iterator method as found in other object-orientated programming languages.
+            </p>
+
+            <h3>For</h3>
+            <p>With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.</p>
+            <h4>Example</h4>
+            <code>
+            Print each fruit in a fruit list:
+            fruits = ["apple", "banana", "cherry"]
+            for x in fruits:
+                print(x)
+            </code>
+
+            <h3>Looping Through a String</h3>
+            <p>Even strings are iterable objects, they contain a sequence of characters:</p>
+            <h4>Example</h4>
+            <p>Loop through the letters in the word "banana":</p>
+            <code>
+            for x in "banana":
+                print(x)
+            </code>
         </section>
         <section class="main-section" id="functions">
             <header>
                 <h2>Functions</h2>
             </header>
+
+            <p>A function is a block of code which only runs when it is called.</p>
+            <p>You can pass data, known as parameters, into a function.</p>
+
+            <h3>Creating a Function</h3>
+            <p>A function can return data as a result.</p>
+            <h4>Example</h4>
+            <p>In Python a function is defined using the def keyword:</p>
+            <code>
+                def my_function():
+                    print("Hello from a function")
+            </code>
+
+            <h3>Calling a Function</h3>
+            <p>To call a function, use the function name followed by parenthesis:</p>
+            <h4>Example</h4>
+            <code>
+                def my_function():
+                    print("Hello from a function")
+                my_function()
+            </code>
         </section>
     </main>
 </body>
