@@ -26,26 +26,98 @@
             <header>
                 <h2>Introduction</h2>
             </header>
-            <p>1</p>
-            <p>2</p>
-            <p>3</p>
-            <p>4</p>
-            <p>5</p>
-            <p>6</p>
-            <p>7</p>
-            <p>8</p>
-            <p>9</p>
-            <p>10</p>
+            <p>
+                Python is an interpreted, object-oriented, high-level programming language with dynamic semantics.
+                Its high-level built in data structures,
+                combined with dynamic typing and dynamic binding,
+                make it very attractive for Rapid Application Development,
+                as well as for use as a scripting or glue language to connect existing components together.
+                Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance.
+                Python supports modules and packages, which encourages program modularity and code reuse.
+                The Python interpreter and the extensive standard library are available in source or binary form without charge for all major platforms,
+                and can be freely distributed.
+            </p>
+            <p>
+                Often, programmers fall in love with Python because of the increased productivity it provides.
+                Since there is no compilation step, the edit-test-debug cycle is incredibly fast.
+                Debugging Python programs is easy: a bug or bad input will never cause a segmentation fault.
+                Instead, when the interpreter discovers an error, it raises an exception.
+                When the program doesn't catch the exception,
+                the interpreter prints a stack trace.
+                A source level debugger allows inspection of local and global variables,
+                evaluation of arbitrary expressions,
+                setting breakpoints,
+                stepping through the code a line at a time, and so on.
+                The debugger is written in Python itself,
+                testifying to Python's introspective power.
+                On the other hand,
+                often the quickest way to debug a program is to add a few print statements to the source:
+                the fast edit-test-debug cycle makes this simple approach very effective. 
+            </p>
         </section>
         <section class="main-section" id="variables">
+            <!--Add spans to code sctions for styling later-->
             <header>
                 <h2>Variables</h2>
             </header>
-            <code>print("Hello World")</code>
-            <code>print("Hello World")</code>
-            <code>print("Hello World")</code>
-            <code>print("Hello World")</code>
-            <code>print("Hello World")</code>
+
+            <p>Variables are containers for storing data values.</p>
+            <h3>Creating Variables</h3>
+            <p>Python has no command for declaring a variable.</p>
+            <p>A variable is created the moment you first assign a value to it.</p>
+            <h4>Example</h4>
+            <code>
+                x = 5
+                y = "John"
+                print(x)
+                print(y)
+            </code>
+
+            <p>Variables do not need to be declared with any particular type, and can even change type after they have been set.</p>
+            <h4>Example</h4>
+            <code>
+                x = 4       # x is of type int
+                x = "Sally" # x is now of type str
+                print(x)
+            </code>
+
+            <h3>Casting</h3>
+            <p>If you want to specify the data type of a variable, this can be done with casting.</p>
+            <h4>Example</h4>
+            <code>
+                x = str(3)    # x will be '3'
+                y = int(3)    # y will be 3
+                z = float(3)  # z will be 3.0
+            </code>
+
+            <h3>Get the Type</h3>
+            <p>You can get the data type of a variable with the type() function.</p>
+            <h4>Example</h4>
+            <code>
+                x = 5
+                y = "John"
+                print(type(x))
+                print(type(y))
+            </code>
+
+            <h3>Single or Double Quotes?</h3>
+            <p>String variables can be declared either by using single or double quotes:</p>
+            <h4>Example</h4>
+            <code>
+                x = "John"
+                # is the same as
+                x = 'John'
+            </code>
+
+            <h3>Case-Sensitive</h3>
+            <p>Variable names are case-sensitive.</p>
+            <h4>Example</h4>
+            <code>
+                This will create two variables:
+                a = 4
+                A = "Sally"
+                #A will not overwrite a
+            </code>
         </section>
         <section class="main-section" id="conditionals">
             <header>
