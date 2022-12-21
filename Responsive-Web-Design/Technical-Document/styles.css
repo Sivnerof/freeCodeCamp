@@ -18,6 +18,14 @@ section {
     margin: 15px;
 }
 
+code {
+    display: block;
+    background-color: #F0F0F0;
+    white-space: pre-wrap;
+    padding: 15px;
+    margin: 10px;
+}
+
 #navbar {
     width: 300px;
     min-width: 290px;
@@ -59,4 +67,19 @@ section {
     position: absolute;
     margin-left: 310px;
     padding: 20px;
+}
+
+@media only screen and (max-width: 400px) {
+    #main-doc {
+      margin-left: -10px;
+    }
+  
+    code {
+      margin-left: -20px;
+      width: 100%;
+      padding: 15px;
+      padding-left: 10px;
+      padding-right: 45px;
+      min-width: 233px;
+    }
 }
