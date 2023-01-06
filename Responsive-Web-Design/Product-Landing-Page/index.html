@@ -22,6 +22,13 @@
 
     <main>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY" id="video" title="Muppets singing Bohemian Rhapsody" frameborder="0" allowfullscreen></iframe>
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+            <label for="email">
+                E-Mail:
+                <input type="email" name="email" id="email" placeholder="name@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}">
+            </label>
+            <input type="submit" id="submit" value="Submit">
+        </form>
     </main>
 
     <footer>
@@ -29,18 +36,6 @@
     </footer>
 
     <!--
-        7. Your landing page has a form element with a corresponding id="form"
-
-        8. Within the form, there is an input field with id="email" where you can enter an email address
-
-        9. The #email input field should have placeholder text to let users know what the field is for
-
-        10. The #email input field uses HTML5 validation to confirm that the entered text is an email address
-
-        11. Within the form, there is a submit input with a corresponding id="submit"
-
-        12. When you click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit)
-
         13. The navbar should always be at the top of the viewport
 
         14. Your product landing page should have at least one media query
